@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreenActivity">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/et_reg"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Numéro de registre national"
+        />
+
+    <EditText
+        android:id="@+id/et_mdp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:hint="Mot de passe"
+        android:layout_height="50dp"/>
+
+
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Se connecter"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/check_doc_pat"
+        android:layout_width="50dp"
+        android:visibility="invisible"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+
+    <TextView
+        android:layout_toLeftOf="@id/check_doc_pat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:layout_alignBottom="@id/check_doc_pat"
+        android:layout_alignTop="@id/check_doc_pat"
+        android:text="Patient"
+        android:layout_marginRight="10dp"
+        android:gravity="right|center"/>
+
+</RelativeLayout>
